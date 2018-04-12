@@ -106,7 +106,7 @@ jobs:
      DB_FOLDER_NAME: {{allocations-db-folder-name}}
   - put: cf
     params:
-      manifest: pal-tracker-distributed/manifest-allocations.yml
+      manifest: pal-tracker/manifest-allocations.yml
       path: allocations-artifacts/allocations-server*.jar
       current_app_name: tracker-allocations
 
@@ -132,7 +132,7 @@ jobs:
      DB_FOLDER_NAME: {{backlog-db-folder-name}}
   - put: cf
     params:
-      manifest: pal-tracker-distributed/manifest-backlog.yml
+      manifest: pal-tracker/manifest-backlog.yml
       path: backlog-artifacts/backlog-server*.jar
       current_app_name: tracker-backlog
 
@@ -158,7 +158,7 @@ jobs:
      DB_FOLDER_NAME: {{registration-db-folder-name}}
   - put: cf
     params:
-      manifest: pal-tracker-distributed/manifest-registration.yml
+      manifest: pal-tracker/manifest-registration.yml
       path: registration-artifacts/registration-server*.jar
       current_app_name: tracker-registration
 
@@ -184,6 +184,6 @@ jobs:
      DB_FOLDER_NAME: {{timesheets-db-folder-name}}
   - put: cf
     params:
-      manifest: pal-tracker-distributed/manifest-timesheets.yml
+      manifest: pal-tracker/manifest-timesheets.yml
       path: timesheets-artifacts/timesheets-server*.jar
       current_app_name: tracker-timesheets
