@@ -91,7 +91,7 @@ jobs:
     trigger: true
   - get: allocations-artifacts
     trigger: false
-- task: migrate database
+  - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
        CF_API_URL: {{cf-api-url}}
@@ -116,7 +116,7 @@ jobs:
     trigger: true
   - get: backlog-artifacts
     trigger: false
-- task: migrate database
+  - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
        CF_API_URL: {{cf-api-url}}
@@ -142,7 +142,7 @@ jobs:
     trigger: true
   - get: registration-artifacts
     trigger: false
-- task: migrate database
+  - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
        CF_API_URL: {{cf-api-url}}
@@ -167,7 +167,7 @@ jobs:
     trigger: true
   - get: timesheets-artifacts
     trigger: false
-- task: migrate database
+  - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
        CF_API_URL: {{cf-api-url}}
