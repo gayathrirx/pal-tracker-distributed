@@ -13,6 +13,8 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry:1.6.1.RELEASE"
 
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker:1.6.1.RELEASE"
+
     testCompile project(":components:test-support")
 }
 
